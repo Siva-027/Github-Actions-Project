@@ -40,7 +40,7 @@ jobs:
       run: trivy fs --format table -o fsreport.json
     
     - name: Upload FS Scan Report
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: fs-scan-report
         path: fsreport.json
