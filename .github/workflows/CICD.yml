@@ -48,7 +48,7 @@ jobs:
     - name: Gitleaks scan
       uses: gitleaks/gitleaks-action@v2.3.4
       with:
-        args: ". --report-path=gitleaks-report.json --redact-secrets"
+        extra-args: ". --report-path=gitleaks-report.json --redact-secrets"
     
     - name: Upload Gitleaks Report
       uses: actions/upload-artifact@v4
