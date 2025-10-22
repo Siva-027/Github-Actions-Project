@@ -46,6 +46,4 @@ jobs:
         path: fsreport.json
     
     - name: Gitleaks scan
-      uses: gitleaks/gitleaks-action@v2.3.4
-      with:
-        extra-args: ". --report-path=gitleaks-report.json --redact-secrets"
+      run: gitleaks detect --source . --report-path=gitleaks-report.json
