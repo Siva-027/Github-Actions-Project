@@ -50,3 +50,9 @@ jobs:
     
     - name: Gitleaks scan
       run: gitleaks detect --source . --report-path=gitleaks-report.json
+
+    - name: Upload Gitleaks Report
+      uses: actions/upload-artifact@v4
+      with:
+        name: gitleaks-report
+        path: gitleaks-report.json
