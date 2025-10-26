@@ -46,7 +46,7 @@ jobs:
         path: fsreport.json
 
     - name: Gitleaks installation
-      run: sudo apt -get install gitleaks -y
+      run: sudo apt-get install gitleaks -y
     
     - name: Gitleaks scan
       run: gitleaks detect --source . --report-path=gitleaks-report.json
