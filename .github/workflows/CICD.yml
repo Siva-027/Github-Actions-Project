@@ -181,4 +181,4 @@ jobs:
         echo "${{ secrets.EKS_KUBECONFIG}}" | base64 --decode > $HOME/.kube/config
     - name: Deploy to EKS Cluster
       run: |
-        kubectl apply -f ds.yaml  
+        kubectl apply -f ds.yml  
