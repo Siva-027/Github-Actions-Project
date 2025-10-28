@@ -147,10 +147,10 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v6
       with:
-        context: ./app
-        push: true
-        tags: siva/bankapp:latest
-        file: ./Dockerfile
+         context: ./app
+         push: true
+         tags: siva/bankapp:latest
+         file: ./Dockerfile
 
   deploy_to_kubernetes_cluster:
     
