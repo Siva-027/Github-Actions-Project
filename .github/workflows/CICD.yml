@@ -7,7 +7,7 @@ on:
 jobs:
   compile:
 
-    runs-on: self-hosted
+    runs-on: ubunutu-latest
 
     steps:
     - uses: actions/checkout@v4
